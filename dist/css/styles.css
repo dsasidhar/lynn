@@ -5,10 +5,9 @@ section,#panelSlapContainer{
 section{
 	margin-top: 40px;
 }
-section.first{background: red;}
-section.second{background: blue;}
-section.third{background: magenta;}
-section.fourth{background: green;}
+h2.section-title{
+	display: none;
+}
 
 #panelSlapContainer{
 	position: absolute;
