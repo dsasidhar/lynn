@@ -71,19 +71,23 @@ h2.section-title, .toc-title{
 }
 .unleash_slide{
 	//background: url(dist/img/timeline/timeline-collapsed2.png);
-	min-height: 325px !important;
+	min-height: 100% !important;
 	height: auto !important;
 }
 .unleash_slider{
-	min-height: 325px !important;
+	min-height: 80% !important;
 	height: auto !important;
+}
+.unleash_slide img, .unleash_slide video{
+	height: 80% !important;
 }
 
 .bg-black{
 	background-color: #000;
 	color: #fff;
-	height: 150px;
+	min-height: 150px;
 }
+
 .bg{
 	background-color: #000;
 	color: #fff;
@@ -202,23 +206,61 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
 	color: #bb9632 !important;
 	font-weight: 600;
 }
-<<<<<<< HEAD
+
 #collectionHolder ul{
 	  left: initial !important;
 	  right: 0px;
-=======
+}
 .share{
 	float: right;
->>>>>>> 1d36392e0bf555530726d0511ec586d9a837d259
+
 }
 
 #social-style{
-	color: #b5985c;
-  padding: 0px 15px;
-  width: auto;
-  float: left;
-  position: absolute;
-  z-index: 100000;
-  margin-top: 5px;
+	color: #b5985c;padding: 0px 15px;width: auto;float: left;position: absolute;z-index: 100000;margin-top: 5px;
 }
+.stButton .stLarge{
+	background: none !important;
+}
+.close{
+	color: #fff;
+}
+.right-section .col-xs-6{
+	padding: 0px;
+}
+.right-section .col-xs-6 img{
+	width: 100%;
+}
+/*
+	Media Queries
+*/
+@media screen and (max-width: 768px){
+	#barsContainer{
+
+	}
+	.signup-button{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.big-section, .col-xs-12.grid1, .col-xs-12.grid2{
+		width: 100%;
+
+	}
+	.grid1 p {
+	  color: #bb9632;
+	  font-size: 18px;
+	  font-weight: 600;
+	  padding-left: 1em;
+	  padding-top: 1.4em;
+	}
+	.small-section{
+		width: 50%;
+	}
+	.grid2{
+		width: 50%;
+	}
+	.grid2 img{
+		width: 100%;
+		height: 216px;
+	}
 }
