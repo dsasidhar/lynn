@@ -45,3 +45,145 @@ h2.section-title{
 .toc-bar{
 	background: rgb(107,83,49);
 }
+
+.year{
+	position: absolute;
+	top: 0px;
+	background: #bb9632;
+	padding: 6px;
+	min-width: 70px;
+	color: #fff;
+}
+.unleash_slide{
+	//background: url(dist/img/timeline/timeline-collapsed2.png);
+	min-height: 325px !important;
+	height: auto !important;
+}
+.unleash_slider{
+	min-height: 325px !important;
+	height: auto !important;
+}
+
+.bg-black{
+	background-color: #000;
+	color: #fff;
+	height: 150px;
+}
+.bg{
+	background-color: #000;
+	color: #fff;
+	display: none;
+}
+.knob-class{
+	padding-top: 20px;
+}
+.knob-class label{
+	position: absolute;
+	right: 4em;
+	top: 6em;
+	color: #bb9632;
+}
+
+.section-1 .col-xs-5 .col-xs-6{
+
+	padding: 0px;
+
+}
+.section-1 .col-xs-5 .col-xs-6 img{
+	width: 100%;
+	height: 216px;
+}
+.section-1 .col-xs-7 img{
+	height: 432px;
+	width: 100%;
+}
+section{
+	clear: both;
+}
+h1.heading{
+	color: #bb9632;
+	font-size: 24px;
+	line-height: 40px;
+	padding-top: 20px;
+}
+.light-orange{
+	color: #cb572c;
+}
+.orange{
+	color: #ca412c;
+	font-weight: 700;
+}
+#signUpNow{
+	border-radius: 0px;
+	height: 45px;
+
+
+}
+.signup-button .input-group-addon{
+	border-radius: 0px;
+	color: #fff;
+	background: #ca412c;
+}	
+.signup-button{
+	margin-top: 60px;
+	width: 90%;
+	-webkit-box-shadow: inset 5px 5px 40px -6px rgba(94,75,25,0.35);
+	-moz-box-shadow: inset 5px 5px 40px -6px rgba(94,75,25,0.35);
+	box-shadow: inset 5px 5px 40px -6px rgba(94,75,25,0.35);
+}
+.pad-0{
+	padding: 0px;
+}
+.big-section{
+	width: 79.16666667%;
+
+}
+.big-section img,.small-section img{
+	width: 100%;
+	height: 426px;
+}
+.small-section{
+	width: 20.83333333%;
+}
+.grid1{
+	float: left;
+	display: block;
+	width: 40.5555566%;
+	background: #000;
+	height: 216px;
+}
+.grid1 p{
+	color: #bb9632;
+	font-size: 24px;
+	font-weight: 600;
+	padding-left: 4em;
+	padding-top: 1.4em;
+}
+.grid2{
+	float: left;
+	display: block;
+	height: 216px;
+	width: 19.33333333%;
+}
+.section-head{
+
+	background: #000;
+	clear: both;
+}
+.section-head h1{
+	color: #fff;
+	font-size: 32px;
+	line-height: 50px;
+}
+footer nav.navbar.navbar-inverse, header nav.navbar.navbar-inverse{
+	margin-bottom: 0px;
+	border-radius: 0px;
+	background: #000;
+}
+footer .navbar-nav>li{
+	width: 140px;
+}
+footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
+	color: #bb9632 !important;
+	font-weight: 600;
+}
