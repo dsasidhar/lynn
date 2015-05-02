@@ -202,7 +202,23 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
 	color: #bb9632 !important;
 	font-weight: 600;
 }
+<<<<<<< HEAD
 #collectionHolder ul{
 	  left: initial !important;
 	  right: 0px;
+=======
+.share{
+	float: right;
+>>>>>>> 1d36392e0bf555530726d0511ec586d9a837d259
+}
+
+#social-style{
+	color: #b5985c;
+  padding: 0px 15px;
+  width: auto;
+  float: left;
+  position: absolute;
+  z-index: 100000;
+  margin-top: 5px;
+}
 }
