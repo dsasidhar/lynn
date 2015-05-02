@@ -187,3 +187,7 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
 	color: #bb9632 !important;
 	font-weight: 600;
 }
+#collectionHolder ul{
+	  left: initial !important;
+	  right: 0px;
+}
