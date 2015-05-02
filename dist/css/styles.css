@@ -5,7 +5,7 @@ section,#panelSlapContainer{
 section{
 	margin-top: 40px;
 }
-h2.section-title{
+h2.section-title, .toc-title{
 	display: none;
 }
 
