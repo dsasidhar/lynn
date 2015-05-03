@@ -482,15 +482,27 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
   line-height: 25px;
 	}
 	.unleash_slider{
-	height: 140px !important;
+	height: 410px !important;
 	}
 .unleash_container .unleash_slide{
-	height: 140px !important;
+	height: 410px !important;
 	}
 	.unleash_slide.active img, .unleash_slide.active video{
-		
-	  height: 140px;
+
+	  height: 410px;
 	}
+	#social-style{
+		text-align: center;
+		position: relative !important;
+		margin-bottom: 10px;
+		margin-top: 1em;
+
+	}
+	.col-xs-4.pull-right.knob-class{
+		  padding: 0px;
+  		margin-top: 40px;
+	}
+
 }
 @media screen and (max-width: 560px){
 	h1.heading{
@@ -502,6 +514,22 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
 	.big-section h1{
 		  left: 18%;
 	}
+	.col-xs-4.pull-right.knob-class{
+	}
+	.knob{
+		top: 40px;
+  		left: 35px;
+  		margin-left: 0px !important;
+  		margin-top: 0px !important;
+	}
+	.knob-class label{
+		right: 2em;
+	}
+}
+@media screen and (max-width: 420px){
+	.knob-class label{
+		right: 0em;
+	}	
 }
 .galleryHover:after {
     content:'\A';
