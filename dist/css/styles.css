@@ -498,9 +498,12 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
 		margin-top: 1em;
 
 	}
-	.col-xs-4.pull-right.knob-class{
-		  padding: 0px;
-  		margin-top: 40px;
+	
+	.knob-class label{
+		right: 0em;
+		top: 7.6em;
+  		left: 3.5em;
+  		 padding: 0px;
 	}
 
 }
@@ -514,22 +517,22 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
 	.big-section h1{
 		  left: 18%;
 	}
+	.knob-class label{
+	  top: 6.6em;
+ 	 left: 2.5em;
+	}
 	.col-xs-4.pull-right.knob-class{
 	}
 	.knob{
-		top: 40px;
+		top: 60px;
   		left: 35px;
   		margin-left: 0px !important;
   		margin-top: 0px !important;
 	}
-	.knob-class label{
-		right: 2em;
-	}
+	
 }
 @media screen and (max-width: 420px){
-	.knob-class label{
-		right: 0em;
-	}	
+		
 }
 .galleryHover:after {
     content:'\A';
