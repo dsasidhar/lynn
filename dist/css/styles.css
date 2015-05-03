@@ -286,3 +286,18 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
 		height: 216px;
 	}
 }
+
+.galleryHover:after {
+    content:'\A';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0; left:0;
+    background:rgba(184,144,44,0.3);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.galleryHover:hover:after {
+    opacity:1;
+}

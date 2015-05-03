@@ -13,6 +13,29 @@
       headlineSelector: 'h2.section-title'
     });
 
+    var tops = {};
+    $('section.sectionContent').each(function(i,val){
+      var title = $(val).attr('panel-title');
+      tops[title] = {top:$(val).position().top,index:i};
+    })
+    $('#progress').on('click','.toc-storybar',function(event){
+      var title ='';
+      title= $(event.target).text();
+      $('#panelSlapContainer').animate({
+        'scrollTop' : tops[title].top
+      });
+      $('.toc-bar').each(function(i,val){
+        if(i<tops[title].index){
+          $(val).animate({
+            width:'100%'
+          });
+        }
+        else{
+          $(val).css('width','0%');
+        }
+      });
+    });
+
     
 
 
