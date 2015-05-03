@@ -369,7 +369,7 @@ header .nav>li{
 	display: inline-block;
 	  width: 25%;
 }
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+header .navbar-inverse .navbar-collapse,header .navbar-inverse .navbar-form{
 	background:#bb9632; 
 }
 header .navbar-inverse .navbar-collapse{
