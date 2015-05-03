@@ -195,7 +195,7 @@
 									<p >Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.</p>
 								</div>
 								<div class="col-xs-3 pull-right knob-class">
-									<input class="knob" data-width="150" data-fgColor="#bb9632" data-thickness=".1" data-readOnly=true value="60" data-min="0" data-max="690647" data-linecap=round >
+									<input class="knob" data-width="150" data-fgColor="#bb9632" data-bgColor="#000000" data-thickness=".1" data-readOnly=true value="60" data-min="0" data-max="690647" data-linecap=round >
 									<label>Jobs Created</label>
 								</div>
 							</div>
@@ -322,7 +322,7 @@
 		function loadKnob(val){
 
 			$(function() {
-				$('.knob').knob();
+				$('.knob').knob({'configure':{"bgColor":"black"}});
 				$({
 					value: 0
 				}).animate({
@@ -335,7 +335,7 @@
 					}
 				});
 				return setTimeout(function() {
-					return $('.knob').attr('data-fgColor', 'red').trigger('change');
+					return $('.knob').trigger('change');
 				}, 1000);
 			});
 
