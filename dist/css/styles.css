@@ -1,7 +1,11 @@
 
 @font-face {
   font-family: 'Gotham-Bold';
-  src: url('dist/fonts/ufonts.com_gotham-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../fonts/ufonts.com_gotham-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../fonts/ufonts.com_gotham-light.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 body,h1,h2,h3,h4,h5,h6,p,a,span{
 	font-family: 'Gotham-Bold';
@@ -71,9 +75,25 @@ h2.section-title, .toc-title{
 	min-width: 70px;
 	color: #fff;
 }
-.unleash_slide{
-	  background: url(../img/timeline/timeline-collapsed2.png) #000;
-  background-size: contain;
+
+.unleash_container .unleash_slide:nth-child(1){
+	  background: url(../img/timeline/image1-cropped.png) #000;
+background-size: contain;
+  background-repeat: no-repeat;
+}
+.unleash_container .unleash_slide:nth-child(2){
+	  background: url(../img/timeline/image2-cropped.png) #000;
+	background-size: contain;
+  background-repeat: no-repeat;
+}
+.unleash_container .unleash_slide:nth-child(3){
+	  background: url(../img/timeline/image3-cropped.png) #000;
+	background-size: contain;
+  background-repeat: no-repeat;
+}
+.unleash_container .unleash_slide:nth-child(4){
+	  background: url(../img/timeline/image4-cropped.png) #000;
+	background-size: contain;
   background-repeat: no-repeat;
 }
 .second.sectionContent{
@@ -154,7 +174,7 @@ h1.heading{
 	padding: 0px;
 }
 .big-section{
-	width: 79.16666667%;
+	width: 79.888889999%;
 
 }
 .big-section h1{
@@ -179,7 +199,7 @@ h1.heading{
 	height: 426px;
 }
 .small-section{
-	width: 20.83333333%;
+	width: 20.111111111%;
 }
 #grid-1{
 	overflow: hidden;
@@ -252,6 +272,77 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
 .right-section .col-xs-6 img{
 	width: 100%;
 	height: 216px;
+}
+.footer-top{
+	  display: inline-block;
+  margin: 8px auto;
+  margin-left: 20%;
+}
+.st_facebook_large, .st_twitter_large, .st_linkedin_large, .st_instagram_large,.st_youtube_large{
+	margin: 10px;
+}
+.stYoutube{
+	top: 0px !important;
+}
+.st_facebook_large .stButton .stLarge{
+	background-image: url(../img/icons/facebook.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_facebook_large .stButton .stLarge:after{
+	content: 'LIKE';
+	  position: absolute;
+  color: #bb9632 !important;
+  bottom: -14px;
+    font-size: 10px;
+  left: 4px;
+}
+.st_twitter_large .stButton .stLarge{
+	background-image: url(../img/icons/twitter.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_twitter_large .stButton .stLarge:after,.st_linkedin_large .stButton .stLarge:after,.st_instagram_large .stButton .stLarge:after{
+	content: 'FOLLOW';
+	  position: absolute;
+  color: #bb9632 !important;
+  bottom: -14px;
+  font-size: 10px;
+  left: -4px;
+}
+.st_linkedin_large .stButton .stLarge{
+	background-image: url(../img/icons/linked-in.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_instagram_large .stButton .stLarge{
+	background-image: url(../img/icons/instagram.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_youtube_large .stButton .stLarge{
+	background-image: url(../img/icons/youtube.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_youtube_large .stButton .stLarge:after{
+
+}
+.stButton .stLarge:hover{
+	opacity: 1 !important;
+  	background-position: 0px !important; 
+}
+.st_youtube_large .stNativeButton a img{
+	display: none;
+}
+.st_youtube_large .stNativeButton a {
+	  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-image: url(../img/icons/youtube.png) !important;
+}
+.st_youtube_large .stNativeButton a:after{
+	content: "SUBSCRIBER";
+	  position: absolute;
+  color: #bb9632 !important;
+    bottom: -10px;
+  font-size: 10px;
+  left: -10px;
 }
 /*
 	Media Queries
