@@ -96,9 +96,9 @@ background-size: contain;
 	background-size: contain;
   background-repeat: no-repeat;
 }
-.second.sectionContent{
+/*.second.sectionContent{
 	height: 432px;
-}
+}*/
 .unleash_slide img, .unleash_slide video,.unleash_slide img:hover, .unleash_slide video:hover{
 	opacity: 0;
 }
