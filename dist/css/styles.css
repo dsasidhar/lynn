@@ -278,20 +278,54 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
   margin: 8px auto;
   margin-left: 20%;
 }
+.st_facebook_large, .st_twitter_large, .st_linkedin_large, .st_instagram_large,.st_youtube_large{
+	margin: 10px;
+}
+.stYoutube{
+	top: 0px !important;
+}
 .st_facebook_large .stButton .stLarge{
 	background-image: url(../img/icons/facebook.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_facebook_large .stButton .stLarge:after{
+	content: 'LIKE';
+	  position: absolute;
+  color: #bb9632 !important;
+  bottom: -14px;
+    font-size: 10px;
+  left: 4px;
 }
 .st_twitter_large .stButton .stLarge{
 	background-image: url(../img/icons/twitter.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_twitter_large .stButton .stLarge:after,.st_linkedin_large .stButton .stLarge:after,.st_instagram_large .stButton .stLarge:after{
+	content: 'FOLLOW';
+	  position: absolute;
+  color: #bb9632 !important;
+  bottom: -14px;
+  font-size: 10px;
+  left: -4px;
 }
 .st_linkedin_large .stButton .stLarge{
 	background-image: url(../img/icons/linked-in.png) !important;
+	  background-repeat: no-repeat;
 }
 .st_instagram_large .stButton .stLarge{
 	background-image: url(../img/icons/instagram.png) !important;
+	  background-repeat: no-repeat;
 }
 .st_youtube_large .stButton .stLarge{
 	background-image: url(../img/icons/youtube.png) !important;
+	  background-repeat: no-repeat;
+}
+.st_youtube_large .stButton .stLarge:after{
+
+}
+.stButton .stLarge:hover{
+	opacity: 1 !important;
+  	background-position: 0px !important; 
 }
 .st_youtube_large .stNativeButton a img{
 	display: none;
@@ -301,6 +335,14 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
   width: 32px;
   display: inline-block;
   background-image: url(../img/icons/youtube.png) !important;
+}
+.st_youtube_large .stNativeButton a:after{
+	content: "SUBSCRIBER";
+	  position: absolute;
+  color: #bb9632 !important;
+    bottom: -10px;
+  font-size: 10px;
+  left: -10px;
 }
 /*
 	Media Queries
