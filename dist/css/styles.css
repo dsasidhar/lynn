@@ -245,7 +245,9 @@ footer .navbar-nav>li a,.navbar-brand{
 	color: #bb9632 !important;
 	font-weight: 600;
 }
-
+.unleash_container .unleash_slide{
+	height: 320px !important;
+}
 #collectionHolder ul{
 	  left: initial !important;
 	  right: 0px;
@@ -417,6 +419,9 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
 	Media Queries
 */
 @media screen and (max-width: 768px){
+	body{
+		overflow: hidden;
+	}
 	#progress{
 		display: none !important;
 	}
@@ -452,7 +457,7 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
 		height: 216px;
 	}
 	.st_facebook_large, .st_twitter_large, .st_linkedin_large, .st_instagram_large, .st_youtube_large{
-		margin: 15px 8px !important;
+		margin: 20px 0px !important;
 		  display: inline-block;
 		   
 	}
@@ -469,8 +474,22 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
 	.stButton .stLarge:after,.st_youtube_large .stNativeButton a:after{
 		display: none !important;
 	}
+	h1.heading{
+		  font-size: 18px;
+  line-height: 25px;
+	}
 }
-
+@media screen and (max-width: 560px){
+	h1.heading{
+		  font-size: 14px;
+	}
+	.signup-button{
+		width: 100%;
+	}
+	.big-section h1{
+		  left: 18%;
+	}
+}
 .galleryHover:after {
     content:'\A';
     position:absolute;
