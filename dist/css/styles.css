@@ -482,14 +482,14 @@ header .navbar-inverse .navbar-nav.info-menu>li>a{
   line-height: 25px;
 	}
 	.unleash_slider{
-	height: 410px !important;
+	height: 210px !important;
 	}
 .unleash_container .unleash_slide{
-	height: 410px !important;
+	height: 210px !important;
 	}
 	.unleash_slide.active img, .unleash_slide.active video{
 
-	  height: 410px;
+	  height: 210px;
 	}
 	#social-style{
 		text-align: center;
