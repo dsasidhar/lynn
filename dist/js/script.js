@@ -1,3 +1,4 @@
+  var tops = {};
   jQuery(function($) {
   	var options = {
   		//$menu: $('header .menu'),
@@ -13,7 +14,7 @@
       headlineSelector: 'h2.section-title'
     });
 
-    var tops = {};
+   
     $('section.sectionContent').each(function(i,val){
       var title = $(val).attr('panel-title');
       tops[title] = {top:$(val).position().top,index:i};
@@ -41,6 +42,39 @@
 
 
   });
+
+
+  function gotoNextSection(){
+    var sections = $('section');
+
+    var secondEle = $(sections[1]);
+    var thirdEle = $(sections[2]);
+    var selectedEle;
+    if(secondEle.position().top>0){
+      selectedEle = secondEle;
+    }
+    else if(thirdEle.position().top>0){
+      selectedEle = thirdEle;
+    }
+    else{
+      return;
+    }
+      var title = selectedEle.attr('panel-title');
+       $('#panelSlapContainer').animate({
+        'scrollTop' : tops[title].top
+      });
+      $('.toc-bar').each(function(i,val){
+        if(i<tops[title].index){
+          $(val).animate({
+            width:'100%'
+          });
+        }
+        else{
+          $(val).css('width','0%');
+        }
+      });
+
+  }
 
 
   FWDRLUtils.onReady(function(){
