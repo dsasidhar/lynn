@@ -67,7 +67,7 @@
 							</div>
 							<div class="clearfix"></div>
 							<div onclick="FWDRL.show('gallery1', 3);" class="col-xs-6" id="grid-4">
-								<img src="dist/img/grid/grid4.png" />
+								<img src="dist/img/logo.jpg" />
 							</div>
 							<div onclick="FWDRL.show('gallery1', 4);" class="col-xs-6" id="grid-5">
 								<img src="dist/img/grid/grid5.png" />
@@ -149,8 +149,8 @@
 								<!-- slide 1 -->
 								<div class="unleash_slide"> 
 
-									<img src="dist/img/timeline/grid1.png" />
-									<span class="year" data-count="133108">2000-2003</span>
+									<img src="dist/img/timeline/image1-expanded.png" />
+									<span class="year" data-count="536317">2000-2003</span>
 									<div class="unleash_content" data-parallax="false">
 
 									</div>
@@ -158,24 +158,24 @@
 
 								<!-- slide 2 -->
 								<div class="unleash_slide"> 
-									<img src="dist/img/timeline/grid1.png" />
-									<span class="year" data-count="19821">2004-2006</span>
+									<img src="dist/img/timeline/image2-expanded.png" />
+									<span class="year" data-count="133108">2004-2006</span>
 									<div class="unleash_content" data-parallax="false">
 									</div>
 								</div>
 
 								<!-- slide 3 -->
 								<div class="unleash_slide"> 
-									<img src="dist/img/timeline/grid1.png" />
-									<span class="year" data-count="1401">2007-2009</span>
+									<img src="dist/img/timeline/image3-expanded.png" />
+									<span class="year" data-count="19821">2007-2009</span>
 									<div class="unleash_content" data-parallax="false">
 									</div>
 								</div>
 
 								<!-- slide 4 -->
 								<div class="unleash_slide"> 
-									<img src="dist/img/timeline/grid1.png" />
-									<span class="year" data-count="690647">2010-2013</span>
+									<img src="dist/img/timeline/image4-expanded.png" />
+									<span class="year" data-count="1401">2010-2015</span>
 									<div class="unleash_content" data-parallax="false">
 									</div>
 								</div>
@@ -192,7 +192,15 @@
 
 								<div class="col-xs-8">
 									<h4 id="year-text">2000</h4>
-									<p >Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.Dummy Text Goes Here.</p>
+									<p id="2000-2003">
+									Through the devastating death of her father during college, Lynn realized first-hand the
+economic burden the loss of a working parent could place upon a family. Inspired to protect others from the same turmoil, Lynn founded Patriarch Partners, an investment firm designed to acquire companies abandoned and on the cusp of failure. In 2000, she went #ALLLYNN. </p>
+									<p id="2004-2006">
+									Any business, regardless of the industry, can face devastation. With investments and loans to more than 250 companies at this date, Lynn saved and created jobs across multiple industries and market sectors. From consumer products, to automotive, to helicopters for the military, Lynn left her mark on myriad industries. With companies all across the country, Lynn spends most of her time at 40,000 feet or wearing a hard hat. She takes a personal interest in all her companies, typically flying between New York, Michigan Arizona, and California in any given week. </p>
+									<p id="2007-2009">
+									Jobs are not the only thing Lynn fights to save. During the financial crisis, every company, regardless of industry, suffered devastating losses to its revenue base. Once again, survival became the noblest of causes and the fight for stabilization through this time of recession became the primary focus for Lynn. This large portfolio of companies needed to restart the rebuilding process again, to maximize value and protect jobs while unemployment in our nation skyrocketed and families were left behind. </p>
+									<p id='2010-2015'>
+									Lynn's mission is not just to save families, but to inspire others to follow her path. This has been a time of innovation and value creation—designing, disrupting and inventing products never seen before. Lynn’s main goal when building Patriarch Partners was to create the precedent. And by proving that making money and the world a better place are not mutually exclusive, she now leaves footsteps to follow. Are you #ALLLYNN?</p>	
 								</div>
 								<div class="col-xs-3 pull-right knob-class">
 									<input class="knob" data-width="150" data-fgColor="#bb9632" data-thickness=".1" data-readOnly=true value="60" data-min="0" data-max="690647" data-linecap=round >
@@ -267,23 +275,18 @@
 							<li><a href="#about">LEGAL</a></li>
 							<li><a href="#contact">CONTACT US</a></li>
 						</ul>
+
+						<span>
+							<a href="#" class="footer-top"><img src="dist/img/footer-arrow.png" /></a>
+						</span>
 						<span class="share">
-						<span class='st_sharethis_large' displayText='ShareThis'></span>
-					<span class='st_facebook_large' displayText='Facebook'>
-						<i class="fa fa-facebook"></i>
-					</span>
-					<span class='st_twitter_large' displayText='Tweet'>
-						<i class="fa fa-twitter"></i>
-					</span>
-					<span class='st_linkedin_large' displayText='LinkedIn'>
-						<i class="fa fa-linkedin"></i>
-					</span>
-					<span class='st_pinterest_large' displayText='Pinterest'>
-						<i class="fa fa-pinterest-p"></i>
-					</span>
-					<span class='st_email_large' displayText='Email'>
-						<i class="fa fa-envelope-o"></i>
-					</span>
+						
+					<span class='st_facebook_large' displayText='Facebook'></span>
+					<span class='st_twitter_large' displayText='Tweet'></span>
+					<span class='st_linkedin_large' displayText='LinkedIn'></span>
+					<span class='st_instagram_large' displayText='Instagram Badge' st_username='lynntilton'></span>
+					<span class='st_youtube_large' displayText='Youtube Subscribe' st_username='UClhWfsA0IqiQRi_-O1w2K9A'></span>
+					
 				</span>
 					</div><!-- /.nav-collapse -->
 					
@@ -307,7 +310,9 @@
 				open_event: 'click',
 				onEventStart : function() { 
 					$('#time-description').show();
+					$('#time-description p').hide();
 					$(this).find('.year').text();
+					$('#'+$(this).find('.year').text()).show();
 					console.log($(this).find('.year').text());
 					$('#year-text').text($(this).find('.year').text());
 
@@ -351,7 +356,7 @@
 
 		<!--share this -->
 		<script type="text/javascript">var switchTo5x=true;</script>
-		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-		<script type="text/javascript">stLight.options({publisher: "a0894a43-3f04-485e-a254-f0609e494b78", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+		<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "a0894a43-3f04-485e-a254-f0609e494b78", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	</body>
 	</html>
