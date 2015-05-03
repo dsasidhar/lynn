@@ -241,7 +241,7 @@ footer nav.navbar.navbar-inverse, header nav.navbar.navbar-inverse{
 footer .navbar-nav>li{
 	width: 140px;
 }
-footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
+footer .navbar-nav>li a,.navbar-brand{
 	color: #bb9632 !important;
 	font-weight: 600;
 }
@@ -342,10 +342,87 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
   font-size: 10px;
   left: -10px;
 }
+
+/*
+mobile navbar
+*/
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	    background-color: #bb9632;
+}
+.navbar-inverse .navbar-toggle.collapsed:hover{
+	background: transparent;
+}
+.navbar-inverse .navbar-toggle{
+	border: 0px;
+	background: #bb9632;
+	  border-radius: 0px;
+}
+.navbar-toggle.collapsed{
+	background: transparent;
+}
+.navbar-toggle{
+	margin-bottom: 0px;
+	margin-right: 5px;
+}
+header .nav>li{
+	float: left;
+	display: inline-block;
+	  width: 25%;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	background:#bb9632; 
+}
+header .navbar-inverse .navbar-collapse{
+	color: #000 !important;
+	  border-top: 0px solid 
+}
+header .navbar-inverse .navbar-nav>.active>a, header .navbar-inverse .navbar-nav>.open>a{
+	color: #000 !important;
+	background: transparent !important;
+	box-shadow: none;
+}
+header .navbar-inverse .navbar-nav>li>a{
+	  text-shadow: none;
+	  color: #000 !important;
+}
+.info-icon{
+	  font-size: 20px;
+}
+header .navbar-nav .open .dropdown-menu{
+	  float: left;
+	  width: 100%;
+}
+header .navbar-nav .open .dropdown-menu li{
+	display: inline-block;
+}
+.info-menu{
+	display: none;
+	background: #000 !important;
+	  margin: 0px -15px;
+}
+header .navbar-inverse .navbar-nav.info-menu>li>a{
+	font-size: 12px !important;
+	color: #bb9632 !important;
+}
+.info-menu li{
+	display: inline-block;
+}
+.navbar-brand {
+  
+  padding: 20px 0px;
+  font-size: 24px;
+  line-height: 20px;
+ }
 /*
 	Media Queries
 */
 @media screen and (max-width: 768px){
+	#progress{
+		display: none !important;
+	}
+	section{
+		margin-top: 0px;
+	}
 	#barsContainer{
 
 	}
@@ -373,6 +450,24 @@ footer .navbar-nav>li a,.navbar-brand, header nav.navbar.navbar-inverse li a{
 	.grid2 img{
 		width: 100%;
 		height: 216px;
+	}
+	.st_facebook_large, .st_twitter_large, .st_linkedin_large, .st_instagram_large, .st_youtube_large{
+		margin: 15px 8px !important;
+		  display: inline-block;
+		   
+	}
+
+	.stButton .stLarge,.st_youtube_large .stNativeButton a{
+		   height: 24px !important;
+  			width: 24px !important;
+  			background-size: contain !important;
+  			  background-repeat: no-repeat !important;
+	}
+	.stYoutube{
+		top: 2px !important;
+	}
+	.stButton .stLarge:after,.st_youtube_large .stNativeButton a:after{
+		display: none !important;
 	}
 }
 
